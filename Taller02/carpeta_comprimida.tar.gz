@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Nombre de la carpeta a comprimir
+carpeta="nueva_carpeta"
+
+# Nombre del archivo comprimido
+archivo_comprimido="nueva_carpeta.tar.gz"
+
+# Comprimir la carpeta y los archivos
+tar -czf "$archivo_comprimido" "$carpeta" archivo01.txt archivo02.txt suma.txt
