@@ -1,4 +1,4 @@
-**Investigación\_7**
+**Juan Diego Claro - 2192508**
 # <a name="pregunta-1"></a>**Pregunta 1**
 Considere la imagen, demuestre que las cuatro condiciones necesarias para que se produzca un interbloqueo se cumplen.
 ## <a name="respuesta"></a>**Respuesta**
