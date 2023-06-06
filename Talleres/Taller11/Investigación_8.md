@@ -203,7 +203,7 @@ Para realizar la traducción de direcciones, se utiliza una tabla de segmentos, 
 La cantidad de memoria requerida por la tabla de segmentos depende del número de segmentos virtuales en el proceso y del tamaño de cada segmento. Dado que los segmentos pueden tener tamaños variables, la cantidad de memoria requerida por la tabla de segmentos puede ser mayor en comparación con la tabla de páginas de paginación.
 # <a name="pregunta-9"></a>***Pregunta 9***
 Considere la siguiente tabla de segmento:
-
+![imagen_2023-06-05_200801464](https://github.com/JuanClaro16/SistemasOperacionales/assets/102691357/a0a2b9ff-f791-47da-9073-d434bac358af)
 ¿Cuales son las direcciones físicas para las siguientes direcciones lógicas?
 
    0. 430
