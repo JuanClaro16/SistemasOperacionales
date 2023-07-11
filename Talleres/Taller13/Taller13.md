@@ -1,0 +1,22 @@
+﻿TALLER N° 13 - SISTEMAS OPERACIONALES
+
+Juan Diego Claro - 2192508
+
+#3 **1. Herramienta**
+
+**Stress-ng**: Stress-ng es una herramienta de prueba de estrés diseñada para someter a prueba los sistemas informáticos y evaluar su estabilidad y capacidad de respuesta en situaciones de carga intensa. Permite simular cargas de trabajo intensivas en la CPU, memoria, disco, red y otros subsistemas, lo que ayuda a identificar posibles problemas de rendimiento, fallos o debilidades en el hardware o en el software.
+
+Stress-ng ofrece una amplia gama de pruebas de estrés y cuenta con numerosas opciones de configuración para adaptarse a las necesidades específicas de cada sistema. Puede generar cargas de trabajo realistas y variadas, lo que permite evaluar diferentes aspectos del sistema bajo condiciones de alta demanda.
+
+Algunas de las pruebas de estrés que se pueden ejecutar con stress-ng incluyen cálculos matemáticos intensivos, operaciones de copia y escritura en disco, simulación de tráfico de red, generación de cargas de trabajo en la memoria y estrés en la CPU.
+
+La herramienta stress-ng es ampliamente utilizada por administradores de sistemas, desarrolladores de software y probadores de rendimiento para evaluar la estabilidad y capacidad de respuesta de los sistemas en diferentes escenarios. También puede ser útil para verificar la eficacia de la refrigeración del sistema y para identificar posibles problemas de sobrecalentamiento en equipos con alta carga de trabajo.
+## <a name="comandos"></a>**2. Comandos**
+- **stress-ng –cpu 2 –cpu-load 80 –timeout 120s:** Este comando ejecutará una prueba de estrés en la CPU utilizando dos trabajadores que generarán una carga del 80% durante 120 segundos. Esta prueba permite evaluar cómo responde la CPU del sistema ante una carga intensiva y verificar su rendimiento y estabilidad.
+- **stress-ng –vm 1 –vm-bytes 2G –timeout 180s:** Este comando ejecutará una prueba de estrés en la memoria utilizando un trabajador que asignará 2GB de memoria durante 180 segundos. La prueba permite evaluar cómo el sistema responde bajo una carga intensiva de memoria y verificar su rendimiento y estabilidad en relación con la gestión y utilización de la memoria.
+- **stress-ng –fork 4 –timeout 240s:** Este comando generará una prueba de estrés en el manejo de procesos e hilos del sistema. Se crearán 4 procesos hijos durante un período de 240 segundos. Esta prueba permite evaluar cómo el sistema maneja la creación y finalización de procesos e hilos, verificando su capacidad de respuesta y estabilidad en situaciones de carga intensiva de procesos.
+## <a name="pruebas-y-resultados"></a>**Pruebas y Resultados**
+- **Evaluación de la CPU:** Durante las pruebas, se observaron oscilaciones en la utilización de la CPU, con valores que fluctuaron entre el 85% y el 94%. Estos resultados indican que el sistema experimentó una carga significativa durante las pruebas de estrés. Sin embargo, se pudo notar una tendencia general hacia un mayor uso de la CPU en las ejecuciones 1, 2 y 4, mientras que las ejecuciones 3 y 5 mostraron un uso relativamente más bajo. Estas variaciones podrían atribuirse a la asignación específica de tareas a los núcleos de la CPU y a la disponibilidad de recursos en cada ejecución.
+- **Evaluación de la memoria:** En las pruebas de estrés de la memoria, se observaron fluctuaciones en el consumo de memoria, con valores que oscilaron entre 1.25GB y 1.38GB en diferentes ejecuciones. Al igual que en la evaluación de la CPU, se observaron variaciones en los resultados. No se identificó una tendencia clara de aumento o disminución constante en el uso de la memoria entre las ejecuciones. Esto puede depender de cómo el sistema gestiona la asignación y liberación de memoria durante cada prueba de estrés.
+
+**Evaluación del manejo de procesos e hilos:** En las pruebas de manejo de procesos e hilos, se generaron un número fijo de procesos e hilos. Los resultados mostraron que se crearon 4 procesos y 15 hilos en cada ejecución. No se observaron cambios significativos en este aspecto, lo que sugiere que el sistema tiene la capacidad de crear y gestionar estos procesos e hilos de manera constante en todas las ejecuciones. Sin embargo, es importante tener en cuenta que estos resultados son estables y podrían variar en otros entornos virtuales, dependiendo de la carga actual del sistema y otros factores.
