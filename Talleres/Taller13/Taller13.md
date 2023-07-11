@@ -2,7 +2,7 @@
 
 Juan Diego Claro - 2192508
 
-#3 **1. Herramienta**
+## **1. Herramienta**
 
 **Stress-ng**: Stress-ng es una herramienta de prueba de estrés diseñada para someter a prueba los sistemas informáticos y evaluar su estabilidad y capacidad de respuesta en situaciones de carga intensa. Permite simular cargas de trabajo intensivas en la CPU, memoria, disco, red y otros subsistemas, lo que ayuda a identificar posibles problemas de rendimiento, fallos o debilidades en el hardware o en el software.
 
